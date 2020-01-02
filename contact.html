@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>La Florentina</h1>
+			<h2>Pizzéria</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_self">Acceuil</a></li>
+				<li><a href="liste_pizzas.html">Nos Pizzas</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<table ID="TableContact">
+			<form action="/send" method="GET">
+					<tbody>
+						<tr>
+							<td>Nom:</td>
+							<td> <input type="text" required name="firstname"><br></td>
+						</tr>
+						<tr>
+							<td>Prénom:</td> 
+							<td><input type="text" name="lastname"><br></td>
+						</tr>
+						<tr>
+							<td>Email:</td> 
+							<td><input type="email" required name="email"><br></td>
+						</tr>
+						<tr>	
+							<td>Numéro de téléphone:</td> 
+							<td><input type="phone" name="phone"><br></td>
+						</tr>
+						<tr>
+							<td>Canal de contact préféré : </td>
+							<td><select name="channel">
+									<option value="Email" name="email">Email</option>
+									<option value="Téléphone" name="telephone">Téléphone</option>	
+									</select><br></td>
+						</tr>
+						<tr>
+							<td>Message :</td>
+							<td><textarea name="comment" style="resize:none" rows ="5" cols ="20"></textarea><br></td>
+						</tr>	
+						<tr>		
+							<td><input type="submit" value="Enregistrer"><br></td>
+						</tr>
+						<tr>
+							<td><input type="reset"><br></td>
+						</tr>
+					</form>
+				</tbody>
+			</form>
+		</table>
+	</body>
+</html>
